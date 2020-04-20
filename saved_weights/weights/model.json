@@ -1,0 +1,968 @@
+{
+    "class_name": "Model",
+    "config": {
+        "name": "model_2",
+        "layers": [
+            {
+                "name": "input_1",
+                "class_name": "InputLayer",
+                "config": {
+                    "batch_input_shape": [
+                        null,
+                        150
+                    ],
+                    "dtype": "float32",
+                    "sparse": false,
+                    "name": "input_1"
+                },
+                "inbound_nodes": []
+            },
+            {
+                "name": "lambda_1",
+                "class_name": "Lambda",
+                "config": {
+                    "name": "lambda_1",
+                    "trainable": true,
+                    "function": [
+                        "4wMAAAAAAAAACgAAAAQAAABTAAAAc4YAAAB0AGoBfACDAX0DfANkAGQBhQIZAH0EfANkAWQAhQIZ\nAH0FfAR8AhoAfQZ8AXwCZAEYAGsCckR8BHwGfAEUABgAfQduBHwGfQd0AGoCfAd8BWcCZAJkA40C\nfQd0AGoCfAZ8BWQCFABnAmQCZAONAn0IfAh8ARQAfQl0AGoDfAB8CXwHgwNTACkETukBAAAA6QAA\nAAApAdoEYXhpcykE2gFL2gVzaGFwZdoLY29uY2F0ZW5hdGXaBXNsaWNlKQraBGRhdGHaAWnaBXBh\ncnRzcgUAAADaCmJhdGNoX3NpemXaC2lucHV0X3NoYXBl2gRzdGVw2gRzaXpl2gZzdHJpZGXaBXN0\nYXJ0qQByEQAAAPpiL2hvbWUvcHVueWFzbG9rL21pbmljb25kYTMvZW52cy90Zi1weTM2L2xpYi9w\neXRob24zLjYvc2l0ZS1wYWNrYWdlcy9rZXJhcy91dGlscy9tdWx0aV9ncHVfdXRpbHMucHnaCWdl\ndF9zbGljZbYAAABzFgAAAAABCgEMAQwBCAEMAQ4CBAESARYBCAE=\n",
+                        null,
+                        null
+                    ],
+                    "function_type": "lambda",
+                    "output_shape": [
+                        150
+                    ],
+                    "output_shape_type": "raw",
+                    "arguments": {
+                        "i": 0,
+                        "parts": 2
+                    }
+                },
+                "inbound_nodes": [
+                    [
+                        [
+                            "input_1",
+                            0,
+                            0,
+                            {}
+                        ]
+                    ]
+                ]
+            },
+            {
+                "name": "lambda_2",
+                "class_name": "Lambda",
+                "config": {
+                    "name": "lambda_2",
+                    "trainable": true,
+                    "function": [
+                        "4wMAAAAAAAAACgAAAAQAAABTAAAAc4YAAAB0AGoBfACDAX0DfANkAGQBhQIZAH0EfANkAWQAhQIZ\nAH0FfAR8AhoAfQZ8AXwCZAEYAGsCckR8BHwGfAEUABgAfQduBHwGfQd0AGoCfAd8BWcCZAJkA40C\nfQd0AGoCfAZ8BWQCFABnAmQCZAONAn0IfAh8ARQAfQl0AGoDfAB8CXwHgwNTACkETukBAAAA6QAA\nAAApAdoEYXhpcykE2gFL2gVzaGFwZdoLY29uY2F0ZW5hdGXaBXNsaWNlKQraBGRhdGHaAWnaBXBh\ncnRzcgUAAADaCmJhdGNoX3NpemXaC2lucHV0X3NoYXBl2gRzdGVw2gRzaXpl2gZzdHJpZGXaBXN0\nYXJ0qQByEQAAAPpiL2hvbWUvcHVueWFzbG9rL21pbmljb25kYTMvZW52cy90Zi1weTM2L2xpYi9w\neXRob24zLjYvc2l0ZS1wYWNrYWdlcy9rZXJhcy91dGlscy9tdWx0aV9ncHVfdXRpbHMucHnaCWdl\ndF9zbGljZbYAAABzFgAAAAABCgEMAQwBCAEMAQ4CBAESARYBCAE=\n",
+                        null,
+                        null
+                    ],
+                    "function_type": "lambda",
+                    "output_shape": [
+                        150
+                    ],
+                    "output_shape_type": "raw",
+                    "arguments": {
+                        "i": 1,
+                        "parts": 2
+                    }
+                },
+                "inbound_nodes": [
+                    [
+                        [
+                            "input_1",
+                            0,
+                            0,
+                            {}
+                        ]
+                    ]
+                ]
+            },
+            {
+                "name": "model_1",
+                "class_name": "Model",
+                "config": {
+                    "name": "model_1",
+                    "layers": [
+                        {
+                            "name": "input_1",
+                            "class_name": "InputLayer",
+                            "config": {
+                                "batch_input_shape": [
+                                    null,
+                                    150
+                                ],
+                                "dtype": "float32",
+                                "sparse": false,
+                                "name": "input_1"
+                            },
+                            "inbound_nodes": []
+                        },
+                        {
+                            "name": "L_1",
+                            "class_name": "Dense",
+                            "config": {
+                                "name": "L_1",
+                                "trainable": true,
+                                "units": 2048,
+                                "activation": "linear",
+                                "use_bias": false,
+                                "kernel_initializer": {
+                                    "class_name": "VarianceScaling",
+                                    "config": {
+                                        "scale": 1.0,
+                                        "mode": "fan_avg",
+                                        "distribution": "normal",
+                                        "seed": null
+                                    }
+                                },
+                                "bias_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "kernel_regularizer": {
+                                    "class_name": "L1L2",
+                                    "config": {
+                                        "l1": 0.0,
+                                        "l2": 0.0
+                                    }
+                                },
+                                "bias_regularizer": null,
+                                "activity_regularizer": null,
+                                "kernel_constraint": null,
+                                "bias_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "input_1",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_1/BN",
+                            "class_name": "BatchNormalization",
+                            "config": {
+                                "name": "L_1/BN",
+                                "trainable": true,
+                                "axis": -1,
+                                "momentum": 0.99,
+                                "epsilon": 0.001,
+                                "center": true,
+                                "scale": true,
+                                "beta_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "gamma_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "moving_mean_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "moving_variance_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "beta_regularizer": null,
+                                "gamma_regularizer": null,
+                                "beta_constraint": null,
+                                "gamma_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_1",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_1/NL",
+                            "class_name": "Activation",
+                            "config": {
+                                "name": "L_1/NL",
+                                "trainable": true,
+                                "activation": "relu"
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_1/BN",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "dropout_1",
+                            "class_name": "Dropout",
+                            "config": {
+                                "name": "dropout_1",
+                                "trainable": true,
+                                "rate": 0.30000000000000004,
+                                "noise_shape": null,
+                                "seed": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_1/NL",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_2",
+                            "class_name": "Dense",
+                            "config": {
+                                "name": "L_2",
+                                "trainable": true,
+                                "units": 1024,
+                                "activation": "linear",
+                                "use_bias": false,
+                                "kernel_initializer": {
+                                    "class_name": "VarianceScaling",
+                                    "config": {
+                                        "scale": 1.0,
+                                        "mode": "fan_avg",
+                                        "distribution": "normal",
+                                        "seed": null
+                                    }
+                                },
+                                "bias_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "kernel_regularizer": {
+                                    "class_name": "L1L2",
+                                    "config": {
+                                        "l1": 0.0,
+                                        "l2": 0.0
+                                    }
+                                },
+                                "bias_regularizer": null,
+                                "activity_regularizer": null,
+                                "kernel_constraint": null,
+                                "bias_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "dropout_1",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_2/BN",
+                            "class_name": "BatchNormalization",
+                            "config": {
+                                "name": "L_2/BN",
+                                "trainable": true,
+                                "axis": -1,
+                                "momentum": 0.99,
+                                "epsilon": 0.001,
+                                "center": true,
+                                "scale": true,
+                                "beta_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "gamma_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "moving_mean_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "moving_variance_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "beta_regularizer": null,
+                                "gamma_regularizer": null,
+                                "beta_constraint": null,
+                                "gamma_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_2",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_2/NL",
+                            "class_name": "Activation",
+                            "config": {
+                                "name": "L_2/NL",
+                                "trainable": true,
+                                "activation": "relu"
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_2/BN",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "dropout_2",
+                            "class_name": "Dropout",
+                            "config": {
+                                "name": "dropout_2",
+                                "trainable": true,
+                                "rate": 0.30000000000000004,
+                                "noise_shape": null,
+                                "seed": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_2/NL",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_3",
+                            "class_name": "Dense",
+                            "config": {
+                                "name": "L_3",
+                                "trainable": true,
+                                "units": 512,
+                                "activation": "linear",
+                                "use_bias": false,
+                                "kernel_initializer": {
+                                    "class_name": "VarianceScaling",
+                                    "config": {
+                                        "scale": 1.0,
+                                        "mode": "fan_avg",
+                                        "distribution": "normal",
+                                        "seed": null
+                                    }
+                                },
+                                "bias_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "kernel_regularizer": {
+                                    "class_name": "L1L2",
+                                    "config": {
+                                        "l1": 0.0,
+                                        "l2": 0.0
+                                    }
+                                },
+                                "bias_regularizer": null,
+                                "activity_regularizer": null,
+                                "kernel_constraint": null,
+                                "bias_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "dropout_2",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_3/BN",
+                            "class_name": "BatchNormalization",
+                            "config": {
+                                "name": "L_3/BN",
+                                "trainable": true,
+                                "axis": -1,
+                                "momentum": 0.99,
+                                "epsilon": 0.001,
+                                "center": true,
+                                "scale": true,
+                                "beta_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "gamma_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "moving_mean_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "moving_variance_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "beta_regularizer": null,
+                                "gamma_regularizer": null,
+                                "beta_constraint": null,
+                                "gamma_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_3",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_3/NL",
+                            "class_name": "Activation",
+                            "config": {
+                                "name": "L_3/NL",
+                                "trainable": true,
+                                "activation": "relu"
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_3/BN",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "dropout_3",
+                            "class_name": "Dropout",
+                            "config": {
+                                "name": "dropout_3",
+                                "trainable": true,
+                                "rate": 0.19999999999999996,
+                                "noise_shape": null,
+                                "seed": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_3/NL",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_4",
+                            "class_name": "Dense",
+                            "config": {
+                                "name": "L_4",
+                                "trainable": true,
+                                "units": 256,
+                                "activation": "linear",
+                                "use_bias": false,
+                                "kernel_initializer": {
+                                    "class_name": "VarianceScaling",
+                                    "config": {
+                                        "scale": 1.0,
+                                        "mode": "fan_avg",
+                                        "distribution": "normal",
+                                        "seed": null
+                                    }
+                                },
+                                "bias_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "kernel_regularizer": {
+                                    "class_name": "L1L2",
+                                    "config": {
+                                        "l1": 0.0,
+                                        "l2": 0.0
+                                    }
+                                },
+                                "bias_regularizer": null,
+                                "activity_regularizer": null,
+                                "kernel_constraint": null,
+                                "bias_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "dropout_3",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_4/BN",
+                            "class_name": "BatchNormalization",
+                            "config": {
+                                "name": "L_4/BN",
+                                "trainable": true,
+                                "axis": -1,
+                                "momentum": 0.99,
+                                "epsilon": 0.001,
+                                "center": true,
+                                "scale": true,
+                                "beta_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "gamma_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "moving_mean_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "moving_variance_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "beta_regularizer": null,
+                                "gamma_regularizer": null,
+                                "beta_constraint": null,
+                                "gamma_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_4",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_4/NL",
+                            "class_name": "Activation",
+                            "config": {
+                                "name": "L_4/NL",
+                                "trainable": true,
+                                "activation": "relu"
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_4/BN",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "dropout_4",
+                            "class_name": "Dropout",
+                            "config": {
+                                "name": "dropout_4",
+                                "trainable": true,
+                                "rate": 0.0,
+                                "noise_shape": null,
+                                "seed": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_4/NL",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_5",
+                            "class_name": "Dense",
+                            "config": {
+                                "name": "L_5",
+                                "trainable": true,
+                                "units": 128,
+                                "activation": "linear",
+                                "use_bias": false,
+                                "kernel_initializer": {
+                                    "class_name": "VarianceScaling",
+                                    "config": {
+                                        "scale": 1.0,
+                                        "mode": "fan_avg",
+                                        "distribution": "normal",
+                                        "seed": null
+                                    }
+                                },
+                                "bias_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "kernel_regularizer": {
+                                    "class_name": "L1L2",
+                                    "config": {
+                                        "l1": 0.0,
+                                        "l2": 0.0
+                                    }
+                                },
+                                "bias_regularizer": null,
+                                "activity_regularizer": null,
+                                "kernel_constraint": null,
+                                "bias_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "dropout_4",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_5/BN",
+                            "class_name": "BatchNormalization",
+                            "config": {
+                                "name": "L_5/BN",
+                                "trainable": true,
+                                "axis": -1,
+                                "momentum": 0.99,
+                                "epsilon": 0.001,
+                                "center": true,
+                                "scale": true,
+                                "beta_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "gamma_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "moving_mean_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "moving_variance_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "beta_regularizer": null,
+                                "gamma_regularizer": null,
+                                "beta_constraint": null,
+                                "gamma_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_5",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_5/NL",
+                            "class_name": "Activation",
+                            "config": {
+                                "name": "L_5/NL",
+                                "trainable": true,
+                                "activation": "relu"
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_5/BN",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "dropout_5",
+                            "class_name": "Dropout",
+                            "config": {
+                                "name": "dropout_5",
+                                "trainable": true,
+                                "rate": 0.0,
+                                "noise_shape": null,
+                                "seed": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_5/NL",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L6-1",
+                            "class_name": "Dense",
+                            "config": {
+                                "name": "L6-1",
+                                "trainable": true,
+                                "units": 64,
+                                "activation": "linear",
+                                "use_bias": false,
+                                "kernel_initializer": {
+                                    "class_name": "VarianceScaling",
+                                    "config": {
+                                        "scale": 1.0,
+                                        "mode": "fan_avg",
+                                        "distribution": "uniform",
+                                        "seed": null
+                                    }
+                                },
+                                "bias_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "kernel_regularizer": {
+                                    "class_name": "L1L2",
+                                    "config": {
+                                        "l1": 0.0,
+                                        "l2": 0.0
+                                    }
+                                },
+                                "bias_regularizer": null,
+                                "activity_regularizer": null,
+                                "kernel_constraint": null,
+                                "bias_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "dropout_5",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "L_6/BN",
+                            "class_name": "BatchNormalization",
+                            "config": {
+                                "name": "L_6/BN",
+                                "trainable": true,
+                                "axis": -1,
+                                "momentum": 0.99,
+                                "epsilon": 0.001,
+                                "center": true,
+                                "scale": true,
+                                "beta_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "gamma_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "moving_mean_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "moving_variance_initializer": {
+                                    "class_name": "Ones",
+                                    "config": {}
+                                },
+                                "beta_regularizer": null,
+                                "gamma_regularizer": null,
+                                "beta_constraint": null,
+                                "gamma_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L6-1",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "activation_1",
+                            "class_name": "Activation",
+                            "config": {
+                                "name": "activation_1",
+                                "trainable": true,
+                                "activation": "relu"
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "L_6/BN",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "dense_1",
+                            "class_name": "Dense",
+                            "config": {
+                                "name": "dense_1",
+                                "trainable": true,
+                                "units": 3,
+                                "activation": "linear",
+                                "use_bias": true,
+                                "kernel_initializer": {
+                                    "class_name": "VarianceScaling",
+                                    "config": {
+                                        "scale": 1.0,
+                                        "mode": "fan_avg",
+                                        "distribution": "uniform",
+                                        "seed": null
+                                    }
+                                },
+                                "bias_initializer": {
+                                    "class_name": "Zeros",
+                                    "config": {}
+                                },
+                                "kernel_regularizer": null,
+                                "bias_regularizer": null,
+                                "activity_regularizer": null,
+                                "kernel_constraint": null,
+                                "bias_constraint": null
+                            },
+                            "inbound_nodes": [
+                                [
+                                    [
+                                        "activation_1",
+                                        0,
+                                        0,
+                                        {}
+                                    ]
+                                ]
+                            ]
+                        }
+                    ],
+                    "input_layers": [
+                        [
+                            "input_1",
+                            0,
+                            0
+                        ]
+                    ],
+                    "output_layers": [
+                        [
+                            "dense_1",
+                            0,
+                            0
+                        ]
+                    ]
+                },
+                "inbound_nodes": [
+                    [
+                        [
+                            "lambda_1",
+                            0,
+                            0,
+                            {}
+                        ]
+                    ],
+                    [
+                        [
+                            "lambda_2",
+                            0,
+                            0,
+                            {}
+                        ]
+                    ]
+                ]
+            },
+            {
+                "name": "dense_1",
+                "class_name": "Concatenate",
+                "config": {
+                    "name": "dense_1",
+                    "trainable": true,
+                    "axis": 0
+                },
+                "inbound_nodes": [
+                    [
+                        [
+                            "model_1",
+                            1,
+                            0,
+                            {}
+                        ],
+                        [
+                            "model_1",
+                            2,
+                            0,
+                            {}
+                        ]
+                    ]
+                ]
+            }
+        ],
+        "input_layers": [
+            [
+                "input_1",
+                0,
+                0
+            ]
+        ],
+        "output_layers": [
+            [
+                "dense_1",
+                0,
+                0
+            ]
+        ]
+    },
+    "keras_version": "2.2.0",
+    "backend": "tensorflow"
+}

@@ -1,0 +1,27 @@
+<ForceField>
+
+    <Residues>
+        <Residue name="1">
+            <Atom name="Ar" type="Ar"/>
+        </Residue>
+    </Residues>
+
+    <!-- σ = 3.40 Å and ε = 114.99 K -->
+
+    <AtomTypes>
+        <Type name="Ar" class="Ar" element="Ar" mass="40.0"/>
+    </AtomTypes>
+
+    <!--
+    coulomb14Scale =	pairs of particles separated by three bonds will have the strength of their Coulomb
+    interaction multiplied by this factor
+	lj14Scale =	pairs of particles separated by three bonds will have the strength of their Lennard-Jones interaction
+	 multiplied by this factor
+    -->
+    
+    <!--
+    <NonbondedForce coulomb14scale="0.0" lj14scale="0.0">
+        <Atom type="Ar" charge="0.0" sigma="3.4" epsilon="114.99"/>
+    </NonbondedForce>
+    -->
+</ForceField>
