@@ -21,7 +21,7 @@ python simulation.py --mode=classical --save_traj_at_end=False --write_pos_only=
 ```
 ##### Classical along with forces from the model
 ```
-python simulation.py --mode=classical-predictor --model_folder=saved_weights/weights --save_traj_at_end=False --write_pos_only=True --also_save_npz=True
+python simulation.py --mode=classical-and-predictor --model_folder=saved_weights/weights --save_traj_at_end=False --write_pos_only=True --also_save_npz=True
 ```
  - `--model_folder`: Folder containing the saved weights
  - `--mode`: Either `classical` or `classical-and-predictor`. Specifies whether a classical only simulation or a classical + model forces simulation is to be run.
